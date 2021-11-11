@@ -1,24 +1,99 @@
-This is free and unencumbered software released into the public domain.
+def priem():
+    global a
+    global b
+    spisok=["16-2,10-2,8-2,3-2,2-2"]
+    spisok2=["2-3,2-8,2-10,2-16"]
+    print("")
+    print(spisok,end=" ")
+    print("")
+    print(spisok2,end=" ")
+    print('')
+    a=int(input(""))
+    b=int(input(""))
 
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
+class v2():
+    def __init__(self,a,b):
+        if a>=2 and b==2:
+            print("")
+            c=int(input(""))
+            spi = []
+            while c != 1:
+                oc = c % b
+                c = c // b
+                if oc==1:
+                    spi.append(1)
+                if oc==0:
+                    spi.append(0)
+                if c==1:
+                    spi.append(1)
 
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
+                    print("Ответ:",spi[::-1])
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
 
-For more information, please refer to <https://unlicense.org>
+
+        if a >= 3 and b == 3:
+            print("")
+            c = int(input(""))
+            spi = []
+            while c != 1:
+                oc = c % b
+                c = c // b
+                if oc == 2:
+                    spi.append(2)
+                if oc == 1:
+                    spi.append(1)
+                if oc == 0:
+                    spi.append(0)
+                if c == 1:
+                    spi.append(1)
+                if c == 2:
+                    spi.append(2)
+
+                    print("Ответ:", spi[::-1])
+
+        if a>=8 and b==8:
+            print("")
+            c=int(input(""))
+            spi = []
+            while c != 1:
+                oc = c % b
+                c = c // b
+                if oc <= 7:
+                    spi.append(oc)
+                if oc == 2:
+                    spi.append(2)
+                if oc == 1:
+                    spi.append(1)
+                if oc == 0:
+                    spi.append(0)
+                if c <= 7:
+                    spi.append(c)
+
+                    print("Ответ:", spi[::-1])
+
+        if a>=10 and b==10:
+            print("")
+            c=int(input(""))
+            spi = []
+            while c != 1:
+                oc = c % b
+                c = c // b
+                if oc <= 10:
+                    spi.append(oc)
+                if c <= 10:
+                    spi.append(c)
+
+                    print("Ответ:", spi[::-1])
+
+
+        if a>=16 and b==16:
+            print("")
+            c=int(input(""))
+            while True:
+                pass
+
+
+        else:
+            pass
+priem()
+v2(a,b)
